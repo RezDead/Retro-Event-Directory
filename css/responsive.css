@@ -1,0 +1,155 @@
+/* RESPONSIVE */
+
+@media (max-width: 1180px) {
+  .page-stage {
+    grid-template-columns: minmax(190px, 220px) minmax(0, 760px) minmax(190px, 220px);
+    gap: 20px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .widget-random {
+    --widget-height: 185px;
+  }
+
+  .widget-warning {
+    --widget-height: 130px;
+  }
+
+  .widget-loading {
+    --widget-height: 165px;
+  }
+
+  .widget-sparkles {
+    --widget-height: 130px;
+  }
+
+  .widget-sticker-tray {
+    --widget-height: 190px;
+  }
+
+  .widget-glitch {
+    --widget-height: 130px;
+  }
+
+  .widget-moon {
+    --widget-width: 150px;
+    --widget-height: 150px;
+  }
+}
+
+@media (max-width: 960px) {
+  .page-stage {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left"
+      "right"
+      "center";
+    min-height: auto;
+  }
+
+  .side-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .directory-window {
+    min-height: 620px;
+    max-height: none;
+  }
+
+  .project-grid {
+    overflow-y: visible;
+  }
+
+  .fun-widget {
+    --widget-width: 100%;
+    --widget-height: 110px;
+
+    width: min(var(--widget-width), 100%);
+    min-height: var(--widget-height);
+    flex: 1 1 160px;
+    margin: 0;
+    transform: none;
+  }
+
+  .widget-loading,
+  .widget-moon {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .directory-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .toolbar-note {
+    line-height: 1.35;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    padding: 14px;
+  }
+}
+
+@media (max-width: 520px) {
+  :root {
+    --text-xs: 0.82rem;
+    --text-sm: 0.94rem;
+    --text-md: 1rem;
+    --text-lg: 1.1rem;
+    --text-xl: 1.2rem;
+    --text-card-title: 1.15rem;
+  }
+
+  .top-marquee {
+    height: auto;
+    font-size: var(--text-xs);
+  }
+
+  .page-stage {
+    width: min(100% - 16px, 1320px);
+    margin: 14px auto;
+  }
+
+  .window-bar {
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: var(--text-sm);
+    padding: 10px 12px;
+  }
+
+  .side-column {
+    display: grid;
+    gap: 8px;
+  }
+
+  .fun-widget {
+    display: flex;
+    width: 100%;
+    min-height: 92px;
+    margin: 0;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    min-height: 300px;
+  }
+
+
+
+
+
+}

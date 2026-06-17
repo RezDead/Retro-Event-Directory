@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #07030d;
+  --panel: #1a0828;
+  --panel-dark: #100018;
+  --purple: #321052;
+  --orange: #ff7a18;
+  --hot-orange: #ff3d00;
+  --pink: #d92b8a;
+  --cream: #ffe6bc;
+  --muted: #c59fcb;
+  --blue-glow: #55d6ff;
+
+  --text-xs: 0.9rem;
+  --text-sm: 1rem;
+  --text-md: 1.1rem;
+  --text-lg: 1.4rem;
+  --text-xl: 1.5rem;
+  --text-card-title: 1.2rem;
+}

@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Courier New", monospace;
+  color: var(--cream);
+  background:
+    linear-gradient(rgba(255, 122, 24, 0.045) 50%, transparent 50%),
+    radial-gradient(circle at 86% 16%, rgba(255, 122, 24, 0.22), transparent 24%),
+    radial-gradient(circle at 10% 12%, rgba(163, 34, 255, 0.22), transparent 28%),
+    radial-gradient(circle at 50% 100%, rgba(217, 43, 138, 0.16), transparent 36%),
+    linear-gradient(315deg, #07030d 0%, #12001b 45%, #210431 72%, #07030d 100%);
+  background-size: 100% 5px, auto, auto, auto, auto;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+button {
+  font: inherit;
+}
+
+.scanlines {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 230, 188, 0.18),
+      rgba(255, 230, 188, 0.18) 3px,
+      transparent 3px,
+      transparent 16px
+    );
+  opacity: 0.24;
+  mix-blend-mode: screen;
+}

@@ -1,0 +1,20 @@
+const grid = document.querySelector("#projectGrid");
+const randomBtn = document.querySelector("#randomBtn");
+const projectCount = document.querySelector("#projectCount");
+const sparkleBtn = document.querySelector("#sparkleBtn");
+const glitchBtn = document.querySelector("#glitchBtn");
+const moonBtn = document.querySelector("#moonBtn");
+const moonIcon = document.querySelector("#moonIcon");
+const moonText = document.querySelector("#moonText");
+const addStickerBtn = document.querySelector("#addStickerBtn");
+const clearStickersBtn = document.querySelector("#clearStickersBtn");
+const warningWidget = document.querySelector(".widget-warning");
+const warningText = document.querySelector(".widget-warning p");
+const loadingWidget = document.querySelector(".widget-loading");
+const loadingTitle = document.querySelector(".widget-loading span");
+const loadingCaption = document.querySelector(".widget-loading small");
+const loadingBarFill = document.querySelector(".fake-loading-bar i");
+
+const imageLightbox = document.querySelector("#imageLightbox");
+const lightboxImage = document.querySelector("#lightboxImage");
+const lightboxClose = document.querySelector("#lightboxClose");

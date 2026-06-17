@@ -1,0 +1,64 @@
+/* IMAGE LIGHTBOX */
+
+.project-hero-media img,
+.project-gallery img {
+  cursor: zoom-in;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 6000;
+  display: none;
+  place-items: center;
+  padding: 34px;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 230, 188, 0.08),
+      rgba(255, 230, 188, 0.08) 2px,
+      transparent 2px,
+      transparent 10px
+    ),
+    rgba(7, 3, 13, 0.92);
+}
+
+.image-lightbox.active {
+  display: grid;
+}
+
+.image-lightbox img {
+  display: block;
+  max-width: min(92vw, 1200px);
+  max-height: 86vh;
+  object-fit: contain;
+  border: 5px solid var(--cream);
+  background: var(--panel-dark);
+  box-shadow:
+    10px 10px 0 var(--black),
+    0 0 30px rgba(255, 122, 24, 0.4);
+  image-rendering: auto;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 18px;
+  right: 22px;
+  z-index: 6001;
+  width: 52px;
+  height: 52px;
+  color: var(--black);
+  background: var(--orange);
+  border: 4px solid var(--black);
+  box-shadow: 5px 5px 0 var(--black);
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus {
+  background: var(--blue-glow);
+  outline: 3px solid var(--cream);
+}
