@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Project File</title>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="project-detail-page">
+  <div class="scanlines"></div>
+
+  <div class="top-marquee">
+    <div class="marquee-track">
+      <span>✦ PROJECT FILE ACTIVE ✦ MATERIALS LOGGED ✦ PROCESS NOTES DETECTED ✦ GALLERY SIGNAL ONLINE ✦ RETURN TO DIRECTORY WHEN FINISHED ✦</span>
+      <span aria-hidden="true">✦ PROJECT FILE ACTIVE ✦ MATERIALS LOGGED ✦ PROCESS NOTES DETECTED ✦ GALLERY SIGNAL ONLINE ✦ RETURN TO DIRECTORY WHEN FINISHED ✦</span>
+    </div>
+  </div>
+
+  <main class="project-page-stage" id="projectPage">
+    <section class="project-detail-window" aria-labelledby="projectTitle">
+      <div class="window-bar project-window-bar">
+        <span id="projectFilePath">project_file://loading</span>
+        <a class="back-link" href="./index.html">← Back</a>
+      </div>
+
+      <article class="project-detail-content">
+        <figure class="project-hero-media">
+          <img id="projectHeroImage" src="" alt="" />
+        </figure>
+
+        <section class="project-summary-panel" aria-label="Project summary">
+          <p class="project-kicker" id="projectCategory">Project File</p>
+          <h1 id="projectTitle">Loading Project...</h1>
+          <p class="project-people" id="projectPeople"></p>
+          <p class="project-summary" id="projectSummary"></p>
+        </section>
+
+        <section class="project-section project-description-panel" id="projectDescriptionSection">
+          <h2>About</h2>
+          <div id="projectDescription"></div>
+        </section>
+
+        <section class="project-section project-details-panel" id="projectDetailsSection">
+          <div class="project-details-grid" id="projectDetails"></div>
+        </section>
+
+        <section class="project-section project-gallery-panel" id="projectGallerySection">
+          <h2>Gallery</h2>
+          <div class="project-gallery" id="projectGallery"></div>
+        </section>
+      </article>
+    </section>
+  </main>
+
+  <div class="image-lightbox" id="imageLightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image preview">
+      ×
+    </button>
+
+    <img id="lightboxImage" src="" alt="" />
+  </div>
+
+  <script src="./projects.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

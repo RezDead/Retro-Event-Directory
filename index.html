@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Retro Project Directory</title>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="scanlines"></div>
+
+  <div class="top-marquee">
+    <div class="marquee-track">
+      <span>✦ PROJECT FILE ACTIVE ✦ MATERIALS LOGGED ✦ PROCESS NOTES DETECTED ✦ GALLERY SIGNAL ONLINE ✦ RETURN TO DIRECTORY WHEN FINISHED ✦</span>
+      <span aria-hidden="true">✦ PROJECT FILE ACTIVE ✦ MATERIALS LOGGED ✦ PROCESS NOTES DETECTED ✦ GALLERY SIGNAL ONLINE ✦ RETURN TO DIRECTORY WHEN FINISHED ✦</span>
+    </div>
+  </div>
+
+  <main class="page-stage">
+    <div class="side-column left-column">
+      <button class="fun-widget widget-random" id="randomBtn" type="button">
+        ✦ Random Project ✦
+      </button>
+
+      <div class="gif-widget widget-computer" aria-label="Animated computer">
+        <img src="./gifs/computer.gif" alt="Animated computer" />
+      </div>
+
+      <div class="fun-widget widget-warning" tabindex="0">
+        <span>!</span>
+        <p>Do not feed the pixels</p>
+      </div>
+
+      <div class="gif-widget widget-cat" aria-label="Cat">
+        <img src="./gifs/dancing cat.gif" alt="Cat" />
+      </div>
+
+      <div class="fun-widget widget-loading" tabindex="0">
+        <span>Loading...</span>
+
+        <div class="fake-loading-bar">
+          <i></i>
+        </div>
+
+        <small>This May take awhile...</small>
+      </div>
+    </div>
+
+    <section class="directory-window">
+      <div class="window-bar">
+        <span>project_directory://all_files</span>
+        <span id="projectCount">loading...</span>
+      </div>
+
+      <div class="directory-toolbar">
+        <span class="toolbar-note">Click any project card to open full file</span>
+        <span class="toolbar-chip">Quick View</span>
+        <span class="toolbar-chip">Event Mode</span>
+      </div>
+
+      <div id="projectGrid" class="project-grid" aria-live="polite">
+        <!-- Project cards inserted by script.js -->
+      </div>
+    </section>
+
+    <div class="side-column right-column">
+      <button class="fun-widget widget-sparkles" id="sparkleBtn" type="button">
+        Enable<br />Sparkles
+      </button>
+
+      <div class="wavy-text-widget widget-tech-toss" aria-label="Tech Toss">
+        <span style="--i: 0">T</span>
+        <span style="--i: 1">e</span>
+        <span style="--i: 2">c</span>
+        <span style="--i: 3">h</span>
+        <span style="--i: 4">&nbsp;</span>
+        <span style="--i: 5">T</span>
+        <span style="--i: 6">o</span>
+        <span style="--i: 7">s</span>
+        <span style="--i: 8">s</span>
+      </div>
+
+      <button class="fun-widget widget-glitch" id="glitchBtn" type="button">
+        Do Not Press
+      </button>
+
+      <div class="gif-widget widget-floppy" aria-label="Animated floppy disk">
+        <img src="./gifs/floppy.gif" alt="Animated floppy disk" />
+      </div>
+
+      <div class="fun-widget widget-sticker-tray" tabindex="0">
+        <span>Add a Sticker</span>
+
+        <div class="sticker-buttons">
+          <button type="button" id="addStickerBtn">Surprise Sticker</button>
+          <button type="button" id="clearStickersBtn">Clear All</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./projects.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
