@@ -144,12 +144,15 @@
 .project-summary-panel h1 {
   margin: 0 0 7px;
   color: var(--cream);
-  font-size: clamp(1.95rem, 4vw, 3.35rem);
-  line-height: 0.94;
+  font-size: clamp(1.45rem, 3vw, 2.75rem);
+  line-height: 0.95;
   text-transform: uppercase;
   text-shadow:
     2px 2px 0 var(--hot-orange),
     4px 4px 0 var(--purple);
+
+  max-height: 2.85em;
+  overflow: hidden;
 }
 
 .project-people {
@@ -266,18 +269,35 @@
 
 .project-gallery-panel {
   grid-area: gallery;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
   padding: 12px;
 }
 
 .project-gallery {
-  height: calc(100% - 28px);
+  flex: 1;
+  min-height: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
+  overflow: hidden;
 }
 
-.project-gallery img {
+.project-gallery-item {
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-gallery-item img {
   display: block;
   width: auto;
   height: auto;
@@ -288,7 +308,7 @@
   image-rendering: pixelated;
   box-shadow: none;
   background: var(--panel);
-  margin: auto;
+  cursor: zoom-in;
 }
 
 @media (max-width: 900px) {

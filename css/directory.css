@@ -138,8 +138,8 @@
 .project-card {
   position: relative;
   display: grid;
-  grid-template-rows: auto 1fr;
-  min-height: 230px;
+  grid-template-rows: 155px 1fr;
+  min-height: 275px;
   padding: 9px;
   color: var(--cream);
   text-decoration: none;
@@ -202,7 +202,7 @@
 
 .project-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 155px;
   object-fit: cover;
   border: 3px solid var(--cream);
   image-rendering: pixelated;

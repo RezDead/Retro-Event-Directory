@@ -9,21 +9,28 @@ body {
   font-family: "Courier New", monospace;
   color: var(--cream);
   background:
-    linear-gradient(rgba(255, 122, 24, 0.045) 50%, transparent 50%),
+    linear-gradient(rgba(85, 214, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(85, 214, 255, 0.12) 1px, transparent 1px),
     radial-gradient(circle at 86% 16%, rgba(255, 122, 24, 0.22), transparent 24%),
     radial-gradient(circle at 10% 12%, rgba(163, 34, 255, 0.22), transparent 28%),
     radial-gradient(circle at 50% 100%, rgba(217, 43, 138, 0.16), transparent 36%),
     linear-gradient(315deg, #07030d 0%, #12001b 45%, #210431 72%, #07030d 100%);
-  background-size: 100% 5px, auto, auto, auto, auto;
+  background-size:
+    48px 48px,
+    48px 48px,
+    auto,
+    auto,
+    auto,
+    auto;
   background-attachment: fixed;
   overflow-x: hidden;
 }
-
 button {
   font: inherit;
 }
 
 .scanlines {
+  display: none;
   position: fixed;
   inset: 0;
   z-index: 40;

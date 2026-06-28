@@ -139,10 +139,12 @@ function renderProjectPage() {
   }
 
   if (gallery && Array.isArray(project.gallery) && project.gallery.length > 0) {
-    gallery.innerHTML = project.gallery
+      gallery.innerHTML = project.gallery
       .slice(0, 3)
       .map((image) => `
-        <img src="${image}" alt="${project.title} gallery image" />
+        <figure class="project-gallery-item">
+          <img src="${image}" alt="${project.title} gallery image" />
+        </figure>
       `)
       .join("");
   } else if (gallerySection) {

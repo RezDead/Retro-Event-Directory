@@ -233,7 +233,7 @@ function showFakeBlueScreen() {
     <div class="bsod-window">
       <p class="bsod-face">:(</p>
 
-      <h1>Oops! Your webpage has run into a problem.</h1>
+      <h1>Oops! We seem to have a problem.</h1>
 
       <p>
         Maybe don't press the "DO NOT PRESS" button.

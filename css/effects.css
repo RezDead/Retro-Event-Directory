@@ -197,7 +197,9 @@ body.vhs-transitioning .project-card {
   width: 100vw;
   height: 100vh;
   min-height: 100dvh;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   padding: clamp(36px, 7vw, 90px);
   color: #ffffff;
   background: #0078d7;
@@ -207,12 +209,13 @@ body.vhs-transitioning .project-card {
 }
 
 .bsod-window {
-  width: min(920px, 100%);
+  width: min(820px, 100%);
   max-width: none;
   padding: 0;
   border: 0;
   background: transparent;
   box-shadow: none;
+  text-align: left;
 }
 
 .bsod-window h1 {
@@ -236,9 +239,9 @@ body.vhs-transitioning .project-card {
 }
 
 .bsod-window .bsod-face {
-  margin: 0 0 28px;
+  margin: 0 0 56px;
   color: #ffffff;
-  font-size: clamp(180px, 24vw, 320px);
+  font-size: clamp(90px, 12vw, 160px);
   line-height: 0.85;
   font-weight: 300;
 }
